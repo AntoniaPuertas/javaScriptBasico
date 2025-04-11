@@ -22,12 +22,6 @@ function generarFrase(){
     document.getElementById("resultado").textContent = mensaje;
 }
 
-document.getElementById("probar").addEventListener("click", function() {
-    
-    generarFrase();
-    document.body.style.backgroundColor = "#C1C1C1";
-
-}
-);
+document.getElementById("probar").addEventListener("click", generarFrase);
 
 generarFrase();
